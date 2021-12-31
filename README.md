@@ -10,6 +10,10 @@
 
 いちおう、**M**SX **T**INY **L**OGO **EX**ECUTOR/**LEX**ICAL ANALYZERの略ということにしています。
 
+**動画(YouTube)**
+
+[![](https://img.youtube.com/vi/6NwYBZGyBjk/0.jpg)](https://www.youtube.com/watch?v=6NwYBZGyBjk)
+
 ## 画面サンプル
 後述『ファイルの説明』→『サンプルコード』の項もご覧ください。
 <p>
