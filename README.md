@@ -36,11 +36,11 @@
 ## ファイルの説明
 - 必須ファイル（プログラム）  
 ※これらのファイルを編集するためには、MSXの文字コードに対応したエディタが必要です。
-  - **src\LEX.BAS** 初期処理（主にVRAM初期化）プログラム
-  - **src\LEX-MAIN.BAS** ブロックプログラミング環境メインプログラム。LEX.BASから呼び出される。
-  - **src\LEX-C.BAS** コンパイラ。ブロックプログラミングで書かれたコードをMSX BASICに変換するトランスパイラ。LEX-MAIN.BASから呼び出される。
-  - **src\LEX-DRAW.DAT** 描画プログラム生成用テンプレート。MSX BASICにてLOADコマンドで読み込み可能。LEX-C.BASが読み込む。
-  - **src\LEX-CMD.DAT** ブロックの定義。MSX BASICにてLOADコマンドで読み込み可能。LEX-MAIN.BAS,LEX-C.BASが読み込む。
+  - **[src\LEX.BAS](https://github.com/matsun-ri/msx-t-lex/raw/main/src/LEX.BAS)** 初期処理（主にVRAM初期化）プログラム
+  - **[src\LEX-MAIN.BAS](https://github.com/matsun-ri/msx-t-lex/raw/main/src/LEX-MAIN.BAS)** ブロックプログラミング環境メインプログラム。LEX.BASから呼び出される。
+  - **[src\LEX-C.BAS](https://github.com/matsun-ri/msx-t-lex/raw/main/src/LEX-C.BAS)** コンパイラ。ブロックプログラミングで書かれたコードをMSX BASICに変換するトランスパイラ。LEX-MAIN.BASから呼び出される。
+  - **[src\LEX-DRAW.DAT](https://github.com/matsun-ri/msx-t-lex/raw/main/src/LEX-DRAW.DAT)** 描画プログラム生成用テンプレート。MSX BASICにてLOADコマンドで読み込み可能。LEX-C.BASが読み込む。
+  - **[src\LEX-CMD.DAT](https://github.com/matsun-ri/msx-t-lex/raw/main/src/LEX-CMD.DAT)** ブロックの定義。MSX BASICにてLOADコマンドで読み込み可能。LEX-MAIN.BAS,LEX-C.BASが読み込む。
 - 必須ファイルが生成するファイル
   - **LEX.INI** ステータス保存用。LEX-MAIN.BASがコンパイラに制御を渡す際に生成する。LEX-MAIN.BASが読み書きする。
   - **LEX-OUT.BAS** コンパイラが生成したMSX BASICプログラム。LEX-C.BASが生成し、実行する。
@@ -53,7 +53,7 @@
   - **sample\SAMPLE6.BAS** MSX命令のサンプル。sin/cosカーブ。<p><img src="/sample/sample6.jpg" alt="英語版ソース" height="160"><img src="/sample/sample6img.jpg" alt="実行結果" height="160"></p>
   - **sample\SAMPLE7.BAS** FIZZBUZZ. MSXでテキスト画面を扱うサンプル。<p><img src="/sample/sample7.jpg" alt="英語版ソース" height="160"><img src="/sample/sample7img.jpg" alt="実行結果" height="160"></p>
 - ディスクイメージ
-  - **disk-image/T-LEX.dsk** 必須ファイルとサンプルコードが入ったディスクイメージ。
+  - **[disk-image/T-LEX.dsk](https://github.com/matsun-ri/msx-t-lex/raw/main/disk-image/T-LEX.dsk)** 必須ファイルとサンプルコードが入ったディスクイメージ。
 
 ## 実行方法
 1. メディアに後述『ファイルの説明』→『必須ファイル』のすべてのファイルを書き込みます。すべてのファイルはカレントディレクトリに保存されている必要があります。
@@ -66,7 +66,7 @@
 
 
 - **ブロックエリア** ブロック(命令)が格納されています。
-  - **パレット切替** クリックすることで、表示するブロックを、英語系・日本語系・MSX命令系に切り替えることができます。<p><img src="/img/scr-en-1.jpg" alt="ENパレット" height="370"> <img src="/img/scr-jp-1.jpg" alt="JPパレット" height="370"> <img src="/img/scr-msx-1.jpg" alt="MSXパレット" height="370"></p>
+  - **パレット切替** クリックすることで、表示するブロックを、英語系・日本語系・MSX命令系に切り替えることができます。<p><img src="/img/scr-en-1.jpg" alt="ENパレット" height="260"> <img src="/img/scr-jp-1.jpg" alt="JPパレット" height="260"> <img src="/img/scr-msx-1.jpg" alt="MSXパレット" height="260"></p>
 - **コードエリア** コーディングを行います。
   - ブロックエリアのブロックをドラッグし、コードエリアにドロップすることでコーディングを行います。
     - 行間にドロップすると挿入されます。
