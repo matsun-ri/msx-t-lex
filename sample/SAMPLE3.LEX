@@ -1,18 +1,18 @@
 bc{7}{7}{3}       
-setpos{-100}{-30} 
-setheading{0}     
-let{A}{3}         
-`repeat{8}        
-|pc{10-A}{A-3}{2} 
-|`repeat{A}       
-||right{360/A}    
-||forward{60}     
+setpos{-12}{0}    
+setheading{90}    
+let{A}{30}        
+let{C}{0}         
+`repeat{7}        
+|let{C}{C+1}      
+|`repeat{5}       
+||let{A}{A+5}     
+||pc{C}{7-C}{3}   
+||forward{A}      
+||right{144}      
 |~end             
-|let{A}{A+1}      
 ~end              
 pause{5}          
-                  
-                  
                   
                   
                   
